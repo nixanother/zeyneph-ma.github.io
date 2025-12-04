@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hüma - Anasayfa</title>
+  
+  <link href="assets/img/favicon.png" rel="icon">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root { --nav-color: #444; --nav-hover-color: #e91e63; --main-color: #e91e63; } 
+    
+    /* Buton Stilleri */
+    .btn-get-started, .btn-more { background: #e91e63 !important; border-color: #e91e63 !important; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px;}
+    .btn-get-started:hover, .btn-more:hover { background: #c2185b !important; color: white; }
+    
+    /* Link Renkleri */
+    a { color: #e91e63; text-decoration: none; }
+    a:hover { color: #c2185b; }
+    
+    /* Dil Değiştirme */
+    .lang-switch { font-weight: bold; margin-left: 15px; color: #e91e63; cursor: pointer; }
+    
+    /* Başlık Renkleri */
+    .section-title h2 { color: #e91e63; }
+    
+    /* Görsel Ayarı */
+    .img-cover { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
+
+    /* --- MENÜ AKTİF OLMA EFEKTİ (PEMBE VE ALT ÇİZGİ) --- */
+    .navmenu a.active {
+      color: #e91e63 !important;
+      position: relative;
+    }
+    
+    /* Alt Çizgi Efekti */
+    .navmenu a.active::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #e91e63;
+      transition: width 0.3s;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Hüma</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="nav-link active" data-target="hero">Anasayfa</a></li>
+          <li><a href="about.html" class="nav-link" data-target="about-preview">Hakkımda</a></li>
+          <li><a href="projects.html" class="nav-link" data-target="projects-preview">Projeler</a></li>
+          <li><a href="gallery.html" class="nav-link" data-target="gallery-preview">Galeri</a></li>
+          <li><a href="contact.html" class="nav-link" data-target="contact-preview">İletişim</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="index_en.html" class="lang-switch">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section">
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>Merhaba, Ben Hüma</h2>
+            <p>Akdeniz Üniversitesi Bilgisayar Programcılığı Öğrencisi</p>
+            <a href="about.html" class="btn-get-started">Keşfetmeye Başla</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-preview" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Hakkımda</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-center">
+                <img src="assets/img/profile-img.jpg" class="img-fluid rounded-circle" style="max-width: 250px;" alt="Hüma">
+            </div>
+            <div class="col-lg-8">
+                <h3>Geleceğin Yazılımcısı</h3>
+                <p class="fst-italic">
+                    Merhaba, ben Hüma. 19 yaşındayım. Yazılım dünyasında kendimi geliştirmek ve büyük projelere imza atmak istiyorum.
+                </p>
+                <p>
+                    Nevzat Saygan Levent Saygan Anadolu Lisesi mezunuyum ve şu anda Akdeniz Üniversitesi'nde eğitimime devam ediyorum.
+                    Kodlama, grafik tasarım ve kitap okumak ilgi alanlarım arasındadır.
+                </p>
+                <a href="about.html" class="btn-more">Detaylı Özgeçmişi Gör</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="projects-preview" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Projelerim</h2>
+            <p>Son çalışmalarımı inceleyin.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-4">
+                <img src="assets/img/portfolio/project-1.jpg" class="img-fluid img-cover" alt="">
+                <h4 class="mt-3">Manga Renklendirme</h4>
+                <p>Photoshop ile kompozisyon çalışması.</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="assets/img/portfolio/project-2.jpg" class="img-fluid img-cover" alt="">
+                <h4 class="mt-3">Dijital Eskiz</h4>
+                <p>Goku karakter çizimi.</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="assets/img/portfolio/project-3.png" class="img-fluid img-cover" alt="">
+                <h4 class="mt-3">Reklam Tasarımı</h4>
+                <p>KIKO ürün afiş çalışması.</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="projects.html" class="btn-more">Tüm Projeleri İncele</a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="gallery-preview" class="section">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+              <h2>Galeri</h2>
+              <p>Objektifimden ve anılarımdan kareler.</p>
+          </div>
+          <div class="row gy-4">
+              <div class="col-lg-4">
+                  <img src="assets/img/portfolio/gallery-1.jpg" class="img-fluid img-cover" alt="">
+              </div>
+              <div class="col-lg-4">
+                  <img src="assets/img/portfolio/gallery-2.jpg" class="img-fluid img-cover" alt="">
+              </div>
+              <div class="col-lg-4">
+                  <img src="assets/img/portfolio/gallery-3.jpg" class="img-fluid img-cover" alt="">
+              </div>
+          </div>
+          <div class="text-center mt-4">
+              <a href="gallery.html" class="btn-more">Galeriyi Gör</a>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="contact-preview" class="section">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Bana Ulaşın</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p>Projeleriniz veya sorularınız için benimle iletişime geçebilirsiniz.</p>
+                    <div class="d-flex justify-content-center gap-4 my-4">
+                        <div><i class="bi bi-envelope" style="color:#e91e63;"></i> zeynepesen094@gmail.com</div>
+                        <div><i class="bi bi-telephone" style="color:#e91e63;"></i> 0552 362 32 60</div>
+                        <div><i class="bi bi-geo-alt" style="color:#e91e63;"></i> Kepez, Antalya</div>
+                    </div>
+                    <a href="contact.html" class="btn-more">İletişim Formuna Git</a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Hüma</strong> <span>Tüm Hakları Saklıdır</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.navmenu ul li a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          // Sayfa kaydırılırken hangi bölümde olduğumuzu hesaplar
+          if (pageYOffset >= (sectionTop - 300)) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(a => {
+          a.classList.remove('active');
+          // Anasayfa özel durumu (En üstteyken)
+          if (pageYOffset < 200 && a.getAttribute('href') === 'index.html') {
+             a.classList.add('active');
+          } 
+          // Diğer bölümler
+          else if (a.getAttribute('data-target') === current) {
+            a.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
